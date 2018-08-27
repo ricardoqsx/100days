@@ -6,7 +6,7 @@ int main()
 {
 
 	// declaracion de variables
-	int a,b,c,d,e,f;
+	float a,b,c,d,e,f;
 	// limpiar pantalla
 	system("clear");
 	// bienvenida
@@ -15,19 +15,19 @@ int main()
 	// solicitud de datos
 	printf("Escriba su primer numero: ");
 	// guardando variables
-	scanf("%i",a);
+	scanf("%f",a);
 	printf("Escriba su segundo numero: ");
-	scanf("%i",b);
+	scanf("%f",b);
 
 	// proceso
 	c=a+b;
-	printf("\n\nEl resultado de la suma es: %i",c);
+	printf("\n\nEl resultado de la suma es: %.2f",c);
 	d=a-b;
-	printf("\nEl resultado de la resta es: %i",d);
+	printf("\nEl resultado de la resta es: %.2f",d);
 	e=a*b;
-	printf("\nEl resultado de la multiplicacion es: %i",e);
+	printf("\nEl resultado de la multiplicacion es: %.2f",e);
 	f=a/b;
-	printf("\nEl resultado de la division es: %i",f);
+	printf("\nEl resultado de la division es: %.2f",f);
 
 	printf("\n\nSus resultados estan siendo mostrados arriba, gracias");
 
