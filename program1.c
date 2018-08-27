@@ -15,9 +15,9 @@ int main()
 	// solicitud de datos
 	printf("Escriba su primer numero: ");
 	// guardando variables
-	scanf("%f",a);
+	scanf("%f",&a);
 	printf("Escriba su segundo numero: ");
-	scanf("%f",b);
+	scanf("%f",&b);
 
 	// proceso
 	c=a+b;
@@ -29,7 +29,7 @@ int main()
 	f=a/b;
 	printf("\nEl resultado de la division es: %.2f",f);
 
-	printf("\n\nSus resultados estan siendo mostrados arriba, gracias");
+	printf("\n\nSus resultados estan siendo mostrados arriba, gracias\n\n");
 
 return 0;
 }
