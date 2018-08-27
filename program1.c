@@ -1,13 +1,14 @@
 // declaracion de librerias
 #include<stdio.h>
-
+#include<stdlib.h>
 // inicio
 int main()
 {
 
 	// declaracion de variables
 	int a,b,c,d,e,f;
-
+	// limpiar pantalla
+	system("clear");
 	// bienvenida
 	printf("\n\nBienvenido, este programa calcula 2 numeros!\n\n");
 
