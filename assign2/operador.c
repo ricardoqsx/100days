@@ -6,16 +6,16 @@
 int main()
 
 {
-	char op,nm[10],ap[10];
+	char op[2],nm[10],ap[10];
 	float a,b,c;
 	printf(bv);
 
 	printf("Introduzca su nombre: ");
-	fgets(nm,10,stdin);
+	scanf("%s",&nm);
 	printf("Ahora su apellido: ");
-	fgets(ap,10,stdin);
+	scanf("%s",&ap);
 
-	printf("Bien %s! Ahora prosigamos con el proceso:\n\n");
+	printf("Bien %s! Ahora prosigamos con el proceso:\n\n",nm);
 
 	printf("Digite el primer numero: ");
 	scanf("%f",&a);
@@ -23,17 +23,17 @@ int main()
 	scanf("%f",&b);
 
 	printf("Introduzca el simbolo de la operacion a realizar: ");
-	scanf("%c",&op);
+	scanf("%s",&op);
 
-	if(op='+')
+	if(op=="+")
 	{
-	c=a+b;
-	printf("%s, el resultado de la suma es: %.2f",nm,c);
+	c=(a+b);
+	printf("\n\n%s, el resultado de la suma es: %.2f",nm,c);
 	}
-	else if(op='-')
+	else if(op=="-")
 	{
-	c=a-b;
-	printf("%s, el resultado de la resta es: %.2f ",nm,c);
+	c=(a-b);
+	printf("\n\n%s, el resultado de la resta es: %.2f",nm,c);
 	}
 
 return 0;
