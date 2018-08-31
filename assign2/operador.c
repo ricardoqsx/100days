@@ -15,7 +15,7 @@ int main()
 	printf("Ahora su apellido: ");
 	scanf("%s",&ap);
 
-	printf("Bien %s! Ahora prosigamos con el proceso:\n\n",nm);
+	printf("\n\nBien %s! Ahora prosigamos con el proceso:\n\n",nm);
 
 	printf("Digite el primer numero: ");
 	scanf("%f",&a);
@@ -25,15 +25,21 @@ int main()
 	printf("Introduzca el simbolo de la operacion a realizar: ");
 	scanf("%s",&op);
 
-	if(op=="+")
+/* si (funcion strcmp para comparar cadenas)
+ de la variable op es igual al simbolo entre comillas
+ (declarandolo como igual a cero), realizara la
+ operacion, en caso de poner igual a 1 significaria que
+ op y el simbolo entre las comillas es distinto */
+
+	if(strcmp(op,"+")==0)
 	{
 	c=(a+b);
 	printf("\n\n%s, el resultado de la suma es: %.2f",nm,c);
 	}
-	else if(op=="-")
+	else if(strcmp(op,"-")==0)
 	{
 	c=(a-b);
-	printf("\n\n%s, el resultado de la resta es: %.2f",nm,c);
+	printf("\n\n%s, el resultado de la resta es: %.2f \n\n",nm,c);
 	}
 
 return 0;
