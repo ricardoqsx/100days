@@ -45,7 +45,7 @@ int main()
 			printf("%s, aprobaste el semestre con una A de %i puntos",nm,p);
 			}
 		}
-	else
+	else if (p<=60)
 		{
 		printf("%s, reprobaste el semestre con una F de %i puntos. \n\nEstudia mas para la proxima",nm,p);
 		}

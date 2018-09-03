@@ -34,12 +34,12 @@ int main()
 	if(strcmp(op,"+")==0)
 	{
 	c=(a+b);
-	printf("\n\n%s, el resultado de la suma es: %.2f",nm,c);
+	printf("\n\n%s, el resultado de la suma es: %.1f\n\n",nm,c);
 	}
 	else if(strcmp(op,"-")==0)
 	{
 	c=(a-b);
-	printf("\n\n%s, el resultado de la resta es: %.2f \n\n",nm,c);
+	printf("\n\n%s, el resultado de la resta es: %.1f \n\n",nm,c);
 	}
 
 return 0;
