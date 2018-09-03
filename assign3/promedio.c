@@ -6,7 +6,7 @@ int main()
 {
 
 	int a,b,c,p;
-	char * nm[10],ap[10];
+	char nt,nm[10],ap[10];
 
 	system("clear");
 
@@ -24,30 +24,37 @@ int main()
 	printf("Escriba la tercera nota: ");
 	scanf("%i",&c);
 
-	p=a+b+c/3;
+/*IMPORTANTE!!! escribir bien las operaciones para
+evitar errores de ejecucion, sin parentesis y bien delimitado no corre*/
+
+	p=(a+b+c)/3;
 
 	if(p>60)
 		{
 		if((p>=61)&&(p<=70))
-			{
-			printf("%s, aprobaste el semestre con una D de %i puntos",nm,p);
-			}
-		else if((p>=71)&&(p<=80))
-			{
-			printf("%s, aprobaste el semestre con una C de %i puntos",nm,p);
-			}
-		else if((p>=81)&&(p<=90))
-			{
-			printf("%s, aprobaste el semestre con una B de %i puntos",nm,p);
-			}
-		else if((p>=91)&&(p<=100))
-			{
-			printf("%s, aprobaste el semestre con una A de %i puntos",nm,p);
-			}
+		{
+			nt='D';
+			printf("%s, aprobaste el semestre con una %c de %i puntos",nm,nt,p);
+		}
+		if((p>=71)&&(p<=80))
+		{
+			nt='C';
+			printf("%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
+		}
+		if((p>=81)&&(p<=90))
+		{
+			nt='B';
+			printf("%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
+		}
+		if((p>=91)&&(p<=100))
+		{
+			nt='A';
+			printf("%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
+		}
 		}
 	else if (p<=60)
 		{
-		printf("%s, reprobaste el semestre con una F de %i puntos. \n\nEstudia mas para la proxima",nm,p);
+		printf("%s, reprobaste el semestre con una F de %i puntos. \n\nEstudia mas para la proxima\n\n",nm,p);
 		}
 
 	return 0;
