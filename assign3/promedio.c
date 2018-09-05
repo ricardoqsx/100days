@@ -29,32 +29,37 @@ evitar errores de ejecucion, sin parentesis y bien delimitado no corre*/
 
 	p=(a+b+c)/3;
 
-	if(p>60)
+	if(p<101)
 		{
+		if (p<=60)
+		{
+			nt='F';
+		printf("\n\n%s, reprobaste el semestre con una %c de %i puntos. \n\nEstudia mas para la proxima\n\n",nm,nt,p);
+		}
 		if((p>=61)&&(p<=70))
 		{
 			nt='D';
-			printf("%s, aprobaste el semestre con una %c de %i puntos",nm,nt,p);
+			printf("\n\n%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
 		}
 		if((p>=71)&&(p<=80))
 		{
 			nt='C';
-			printf("%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
+			printf("\n\n%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
 		}
 		if((p>=81)&&(p<=90))
 		{
 			nt='B';
-			printf("%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
+			printf("\n\n%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
 		}
 		if((p>=91)&&(p<=100))
 		{
 			nt='A';
-			printf("%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
+			printf("\n\n%s, aprobaste el semestre con una %c de %i puntos\n\n",nm,nt,p);
 		}
 		}
-	else if (p<=60)
+		else if (p>101)
 		{
-		printf("%s, reprobaste el semestre con una F de %i puntos. \n\nEstudia mas para la proxima\n\n",nm,p);
+			printf("\n\n%s, no estas escribiendo bien los valores de las notas,\nejecuta el programa de nuevo y asegurate que las notas sean valores de o a 100\n\n");
 		}
 
 	return 0;
