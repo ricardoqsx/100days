@@ -27,7 +27,5 @@ int main()
 
 	printf("\n\n Introduciste 10 numeros, %i pares y %i impares\n\n",c,b);
 
-
-
 	return 0;
 }
