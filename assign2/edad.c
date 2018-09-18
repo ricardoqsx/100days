@@ -4,27 +4,32 @@
 // inicio
 int main()
 {
-	// datos de entrada
+	// declarar variable entera a
 	int a;
 
-// limpia pantalla 
+// hacer limpia pantalla 
 	system("clear");
-// saludito
+// Escribir saludo
 	printf("\n\nBienvenido, este programa te dira si eres mayor de edad\n");
 
-// solicitar datos al usuario
+// Escribir Escriba su edad por favor
 	printf("\nEscriba su edad por favor: ");
+// leer a
 	scanf("%i",&a);
 
-// proceso
+// si a > 18
 	if(a>=18)
 	{
+// Escribir Eres mayor de edad
 		printf("Eres mayor de edad!\n\n");
 	}
+// de lo contrario
 	else
 	{
+// Escribir Eres menor valla pa la casa
 		printf("Eres menor, valla pa la casa\n\n");
 	}
+// fin si
 
 // fin
 	return 0;

@@ -8,9 +8,8 @@
 int main()
 
 {
-// declarar variables
+// declarar variable flotante a,b,c,d; char nm[10],ap[10]
 	float a,b,c,d;
-// declarar arrays
 	char nm[10],ap[10];
 // comprobacion de preprocesador de sistema (si es linux, mac o windows)
 #ifdef __linux__
@@ -20,38 +19,48 @@ int main()
 #ifdef _WIN32
 	system("cls");
 #endif
-// solicitar datos de usuario
+// Escribir Saludo
 	printf(bv);
+// Escribir Introduzca su nombre
 	printf("Introduzca su nombre: ");
-// guarda nombre y apellido
+// leer nm
 	scanf("%s",&nm);
+// Escribir Introduzca su apellido
 	printf("Introduce tu apellido: ");
+// leer ap
 	scanf("%s",&ap);
 // solicita datos a trabajar al usuario
 	printf("\nHola %s! Vamos a proceder a calcular tu promedio",nm);
+// Escribir Introduzca la primera nota obtenida
 	printf("\n\nIntroduzca la primera nota obtenida: ");
-// guarda variables a trabajar
+// leer a
 	scanf("%f",&a);
+// Escribir Introduzca la segunda nota obtenida
 	printf("Introduzca la segunda nota obtenida: ");
+// leer b
 	scanf("%f",&b);
+// Escribir Introduzca la tercera nota obtenida
 	printf("Introduzca la tercera nota obtenida: ");
+// leer c
 	scanf("%f",&c);
-// proceso
+// d=(a+b+c)/3
 	d=(a+b+c)/3;
 	
 /* comment: al agregar rangos encerrar en un parentesis general la operacion de rango y separarlas con el operador && (AND) ó || (OR)*/
+// si d >=61 y d <=100
 	if((d>=61) && (d<=100))
 	{
-	
+// Escribir nm ap, aprobaste el semestre con d puntos	
 		printf("\n\n%s %s, aprobaste el semestre con %.2f puntos\n\n",nm,ap,d);
 	
 	}
+// de otro modo si d>=0 y d<=60
 	else if((d>=0) && (d<=60))
 	{
-	
+//Escribir nm ap, reprobaste el semestre con d puntos
 		printf("\n\n%s %s, reprobaste el semestre con %.2f puntos\n\n",nm,ap,d);
-	
 	}
-
+// fin si
 return 0;
 }
+// fin
